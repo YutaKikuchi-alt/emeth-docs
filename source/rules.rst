@@ -16,9 +16,9 @@ Emethクライアントに設定する設定情報は以下の通りです。
 .. csv-table:: Round 1 設定情報
 
    "| EmethCoreコントラクト 
-   | (emethConttactAddress).", "0x"
+   | (emethConttactAddress).", "0xa65617fFf0c9b5760B5E8AF111C8cc9604588ff2"
    "| EMTトークンコントラクト
-   | (tokenContractAddress)", "0x"
+   | (tokenContractAddress)", "0x8652b03be5fdd664f342d6c9a888239fd3d65852"
    "| Storage API
    | (storageApi)", "ec2-13-208-214-161.ap-northeast-3.compute.amazonaws.com"
 
