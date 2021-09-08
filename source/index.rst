@@ -14,7 +14,8 @@ Welcome to Emeth developer's document!
    :caption: Opening Phase:
 
    basic-info
-   rules
+   rules-r1
+   rules-r2
    rewards
 
 
@@ -23,7 +24,7 @@ Welcome to Emeth developer's document!
    :caption: Getting Started:
 
    install
-   ethereum-setup
+   chain-setup
    config
    commands
 
