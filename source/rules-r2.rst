@@ -16,11 +16,11 @@ Emethクライアントに設定する設定情報は以下の通りです。
 .. csv-table:: Round 2 設定情報
 
    "| EmethCoreコントラクト 
-   | (emethConttactAddress).", "Round 2開始時に公開"
+   | (emethConttactAddress).", "0x985C36Ab085cff3D7B48980084F0181A6c6a637C"
    "| EMTトークンコントラクト
-   | (tokenContractAddress)", "Round 2 開始時に公開"
+   | (tokenContractAddress)", "0x3dAC4e087d0AF73419F3F9E9436Ef2C1f3bC0b2A"
    "| Storage API
-   | (storageApi)", "Round 2 開始時に公開"
+   | (storageApi)", "ec2-13-208-214-161.ap-northeast-3.compute.amazonaws.com"
    "| RPCエンドポイント
    | (endpoint)", "https://testnet.alt.ai"
 
