@@ -1,10 +1,10 @@
-.. _rules-r2:
+.. _rules-r2-2:
 
 ====================
-ルール(Round 2-1)
+ルール(Round 2-2)
 ====================
 
-Opening Phase Round2-1でのネットワークのルールを説明します。
+Opening Phase Round2-2でのネットワークのルールを説明します。
 
 ------------------------------------------------------------------------------
 
@@ -13,12 +13,12 @@ Opening Phase Round2-1でのネットワークのルールを説明します。
 
 Emethクライアントに設定する設定情報は以下の通りです。
 
-.. csv-table:: Round 2-1 設定情報
+.. csv-table:: Round 2-2 設定情報
 
    "| EmethCoreコントラクト 
-   | (emethConttactAddress).", "0x985C36Ab085cff3D7B48980084F0181A6c6a637C"
+   | (emethConttactAddress).", "0xB87FF4025D9782b1FBd541a1F649b4FB48BD9871"
    "| EMTトークンコントラクト
-   | (tokenContractAddress)", "0x3dAC4e087d0AF73419F3F9E9436Ef2C1f3bC0b2A"
+   | (tokenContractAddress)", "0x691af7264535675636994d7C29c20834B27ec768"
    "| Storage API
    | (storageApi)", "ec2-13-208-214-161.ap-northeast-3.compute.amazonaws.com"
    "| RPCエンドポイント
@@ -32,7 +32,7 @@ Emethクライアントに設定する設定情報は以下の通りです。
 
 Emethネットワークの設定情報です。
 
-.. csv-table:: Round 2-1 ネットワーク情報
+.. csv-table:: Round 2-2 ネットワーク情報
 
     "Verifier fee", "10 EMT / JOB", "Verify成功時にJOBの持つTransaction Feeから、失敗時にはノードのDepositから徴収されます"
     "Deposit係数", "1 EMT / Power Capacity", "ノードのattachに必要なDeposit量は、PowerCapacityに応じて決まります。"
@@ -64,12 +64,11 @@ Round 2で投入されるJOBは、サイズ・データセットのバリエー�
 【参考】GeFource RTX 3080 (GPU Memory 10GB)、batchsize=3, epoch=2の場合で100MBサイズのデータセットに対して1JOBあたり約6時間程度
 
 計算が完了すると、ノードはネットワークに結果をsubmitします。
-ネットワークに常駐するVerifierによって計算結果の検査が行われ、十分な精度のモデルができているか判定されます。
+ネットワークに常駐するVerifierによって計算結果プロセスの検査が行われ、十分な計算がなされたかどうか判定されます。
+Round2-2では、epoch >= 2 で計算が完了した場合に検査をパスします。
 
 検査をパスするとJOBは完了となり、リワードを獲得するためのシェアを得ます。
 検査をパスできない場合、シェアは得られません。
-
-パスできない場合はepochの値を増やすことで精度が高まります。
 
 ------------------------------------------------------------------------------
 
