@@ -17,6 +17,7 @@ Welcome to Emeth developer's document!
    rules-r1
    rules-r2
    rules-r2-2
+   rules-r3
    rewards
 
 
@@ -35,6 +36,8 @@ Welcome to Emeth developer's document!
 
    structure
    node-attach
+   deposit
+   power-capacity
    job-status
 
 .. toctree::
