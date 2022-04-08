@@ -18,6 +18,7 @@ Welcome to Emeth developer's document!
    rules-r2
    rules-r2-2
    rules-r3
+   rules-r3-2
    rewards
 
 
